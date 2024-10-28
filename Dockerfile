@@ -1,4 +1,2 @@
 FROM n8nio/n8n:next
-RUN apt-get update && \
-    apt-get install -y openjdk-21-jdk && \
-    apt-get clean;
+RUN apk add --update openjdk-21-jdk
